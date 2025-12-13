@@ -1,0 +1,24 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=v20.20.0"
+  },
+  "scripts": {
+    "build" : "npm install --prefix backend && npm install --prefix admin && npm run build --prefix admin",
+    "start": "npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinChandraBhatt01/ecommerece-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sachinChandraBhatt01/ecommerece-app/issues"
+  },
+  "homepage": "https://github.com/sachinChandraBhatt01/ecommerece-app#readme"
+}
