@@ -1,11 +1,15 @@
 import  env  from './config/env.js'
 import express from 'express';
 import path from 'path';
+import { clerkMiddleware } from '@clerk/express'
+
 const app = express();
 
 app.use(express.json());
 
 const __dirname = path.resolve();
+
+app.use(clerkMiddleware()); // req.auth add auth object to request
 
 app.use('/api/v1', (req, res) => {
   res.json({ message: 'API is working' });
